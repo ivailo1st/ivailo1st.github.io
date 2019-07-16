@@ -28,14 +28,12 @@ canvas{
 }
 
 .Content{
-  top: 0;
-  left: 0;
-  margin-left: 25%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-self: center;
