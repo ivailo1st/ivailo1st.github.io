@@ -50,7 +50,7 @@ body{
   display: flex;
   -ms-flex-wrap:wrap;
   flex-wrap: wrap;
-  padding-left:8%;
+  padding-left:9%;
 }
 
 .Bottom-Content .button {
@@ -98,7 +98,7 @@ body{
 
 .Bottom-Content img{
   max-height:200px;
-  max-width:250px;
+  max-width:300px;
   border: 5px solid #d9d9d9;
 }
 
