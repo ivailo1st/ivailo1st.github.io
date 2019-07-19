@@ -1,3 +1,11 @@
+@media (min-width:768px) {
+  .Column-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }
@@ -46,16 +54,18 @@ body{
   color:#023ea1;
 }
 
-.Bottom-Content{
-  display: block;
-
-}
 .Bottom-Content .gallery{
   display: flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap: wrap;
+}
+
+.Bottom-Content .Column-3{
+  position: relative;
+  justify-content: center;
 }
 
 .Bottom-Content .button {
-  display: inline-block;
   margin-left: 50%;
   border-radius: 4px;
   background-color: #004bc4;
