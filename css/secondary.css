@@ -1,15 +1,47 @@
 @media (min-width:768px) {
   .PersInfo {
+    text-align: right;
     justify-content: flex-end;
     -ms-flex: 0 0 60%;
     flex: 0 0 60%;
   }
 }
+
 @media (min-width:768px) {
   .Name {
     justify-content: flex-start;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
+  }
+}
+
+@media (min-width:768px) {
+  .Top-Left {
+    justify-content: flex-end;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .Top-Right {
+    justify-content: flex-start;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+  }
+}
+
+@media (max-width:768px) {
+  .PersInfo {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width:768px) {
+  .Top-Left img {
+    margin-bottom: 10px;
+
   }
 }
 
@@ -33,6 +65,7 @@ body{
 }
 
 .Head-Content .Name{
+  width: 100%;
   padding-top:1px;
   padding-left: 10%;
   position: relative;
@@ -50,11 +83,10 @@ body{
   font-size: 25px;
   text-transform: uppercase;
 }
-
 .Head-Content .PersInfo{
+  width: 100%;
   position: relative;
   font-size: 20px;
-  text-align: right;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
@@ -90,9 +122,9 @@ body{
 }
 /* Top Part of the Page */
 .Top-Content{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap:wrap;
   border-bottom: 1px solid #D4D4D4;
   padding-bottom: 20px;
 }
@@ -109,19 +141,18 @@ body{
 }
 
 .Top-Left{
-  display: block;
-  float: left;
+  width:100%;
+  position: relative;
 }
 .Top-Left h1{
   text-align: left;
 }
 
 .Top-Content img{
-  float: left;
-  margin-right: 10px;
+  margin-right:10px;
   border: 2px solid #fdfdfd;
   border-radius: 6px;
-  max-width:345px;
+  max-width:348px;
   min-width:100px;
 }
 .Top-Content ul{
@@ -131,9 +162,8 @@ body{
 }
 
 .Top-Right{
-  padding-left: 45%;
-  display:block;
-  float:right;
+  width:100%;
+  position: relative;
 }
 
 .Top-Right ul{
