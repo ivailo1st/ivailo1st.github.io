@@ -35,7 +35,8 @@ body{
 .Head-Content .Name{
   padding-top:1px;
   padding-left: 10%;
-  position:relative;
+  position: relative;
+
 }
 
 .Head-Content h1{
@@ -50,12 +51,12 @@ body{
   text-transform: uppercase;
 }
 .Head-Content .PersInfo{
-  position:relative;
+  position: relative;
   font-size: 20px;
   text-align: right;
   font-weight: 600;
-  letter-spacing: 0.5px
-
+  letter-spacing: 0.5px;
+}
 
 }
 .Head-Content .PersInfo ul{
