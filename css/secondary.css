@@ -50,6 +50,7 @@ body{
   font-size: 25px;
   text-transform: uppercase;
 }
+
 .Head-Content .PersInfo{
   position: relative;
   font-size: 20px;
@@ -58,7 +59,6 @@ body{
   letter-spacing: 0.5px;
 }
 
-}
 .Head-Content .PersInfo ul{
   list-style: none;
   letter-spacing: 1px;
