@@ -57,7 +57,6 @@ body{
 }
 
 .Link-Content{
-  z-index: 2;
   margin-right:8.4%;
 }
 
@@ -73,12 +72,17 @@ body{
 /* text that appears on hover by the user*/
 /* the specific object for the user to hover */
 .Link-Content .extraInfo {
+  z-index: 2;
   position:relative;
   display:inline-block;
   margin-left: 2.5%;
 }
 /* the text that appears on hover */
 .Link-Content .extraInfo .extraText {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   visibility: hidden;
   width: 120px;
   background-color: #010133;
