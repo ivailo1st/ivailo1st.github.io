@@ -31,6 +31,23 @@
   }
 }
 
+@media (min-width:768px) {
+  .Bottom-Left {
+    justify-content: flex-start;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .Bottom-Right {
+    justify-content: flex-end;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+  }
+}
+
+
 @media (max-width:768px) {
   .PersInfo {
     justify-content: center;
@@ -280,8 +297,9 @@ body{
 
 .Bottom-Content{
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap:wrap;
 }
 
 .Bottom-Content strong{
@@ -298,8 +316,8 @@ body{
 }
 
 .Bottom-Left{
-  display: block;
-  float:left;
+  width:100%;
+  position: relative;
 }
 
 .Bottom-Left ul{
@@ -307,9 +325,8 @@ body{
 }
 
 .Bottom-Right{
-  display: block;
-  float: right;
-  padding-left: 45%;
+  width:100%;
+  position: relative;
 }
 
 .Bottom-Right ul{
