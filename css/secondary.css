@@ -34,16 +34,16 @@
 @media (min-width:768px) {
   .Bottom-Left {
     justify-content: flex-start;
-    -ms-flex: 0 0 80%;
-    flex: 0 0 80%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
   }
 }
 
 @media (min-width:768px) {
   .Bottom-Right {
     justify-content: flex-end;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
   }
 }
 
