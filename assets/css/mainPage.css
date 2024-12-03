@@ -1,0 +1,131 @@
+#particles-js {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+body {
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+.content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content .headContent {
+  color: #010133;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.content .headContent h1 {
+  font-size: 7vw;
+  margin-bottom: 0;
+}
+
+.content .headContent h2 {
+  margin-top: 0;
+  color: #020273;
+  font-size: 3vw;
+  font-style: oblique;
+}
+
+.linkContent {
+  margin-right: 8.4%;
+}
+
+.content .linkContent ul {
+  list-style-type: none;
+}
+
+.content .linkContent li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+/* text that appears on hover by the user*/
+/* the specific object for the user to hover */
+.linkContent .extraInfo {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  margin-left: 2.5%;
+}
+
+/* the text that appears on hover */
+.linkContent .extraInfo .extraText {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  visibility: hidden;
+  width: 120px;
+  background-color: #010133;
+  color: #fff;
+  font-size: calc(8px + 0.6vw);
+  border-radius: 6px;
+  padding: 10px 10px;
+  /* positioning */
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 2.5%;
+}
+
+.linkContent .extraInfo .extraText::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #010133 transparent;
+}
+
+.linkContent .extraInfo:hover .extraText {
+  visibility: visible;
+}
+
+.linkContent a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #020273;
+  font-style: oblique;
+  font-size: calc(8px + 2vw);
+}
+
+.linkContent a:hover {
+  color: #5151f0;
+  text-decoration: underline solid #5151f0;
+}
