@@ -12,6 +12,8 @@
   "dependencies": {
     "@tsparticles/vue3": "^3.0.1",
     "nuxt": "^3.14.1592",
+    "nuxt-particles": "^0.3.0",
+    "tsparticles": "^3.7.1",
     "vue": "latest",
     "vue-router": "latest"
   }
