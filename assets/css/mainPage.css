@@ -10,10 +10,6 @@
   overflow: hidden;
 }
 
-body {
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
-
 .content {
   top: 0;
   left: 0;
@@ -35,6 +31,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  font: normal 75% Arial, Helvetica, sans-serif;
 }
 
 .content .headContent {

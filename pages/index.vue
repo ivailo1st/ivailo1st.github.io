@@ -112,6 +112,6 @@ const nuxtParticleOptions: RecursivePartial<IOptions> = {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("~/assets/css/mainPage.css");
 </style>

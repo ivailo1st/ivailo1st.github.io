@@ -16,5 +16,8 @@
     "tsparticles": "^3.7.1",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "vue3-carousel-nuxt": "^1.1.3"
   }
 }
