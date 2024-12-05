@@ -71,39 +71,29 @@
     </div>
     <div class="middleContent">
       <h1>My Work</h1>
-      <Carousel v-bind="carouselConfig" class="slideshowContainer">
-        <div class="slideshow">
-          <div class="prev">
-            <button onclick="plusSlides(-1)">&#10094;</button>
+      <Carousel v-bind="carouselConfig">
+        <Slide key="item1">
+          <div class="carousel__item">
+            <NuxtLink to="/eBikeGuardian">
+              <img src="~/assets/images/E-Bike Guardian.jpg" />
+            </NuxtLink>
           </div>
-          <div class="projects">
-            <Slide class="mySlides fade">
-              <a href="E-Bike Guardian.html">
-                <img src="../assets/images/E-Bike Guardian.jpg" />
-              </a>
-            </Slide>
+        </Slide>
+        <Slide key="item2"
+          ><a href="Mini Project.html">
+            <img src="../assets/images/Mini Logo Alt.jpg" />
+          </a>
+        </Slide>
+        <Slide key="item3"
+          ><a href="30th Anniversary.html">
+            <img src="../assets/images/30th Anniversary Logo.jpg" />
+          </a>
+        </Slide>
 
-            <Slide class="mySlides fade">
-              <a href="Mini Project.html">
-                <img src="../assets/images/Mini Logo Alt.jpg" />
-              </a>
-            </Slide>
-
-            <Slide class="mySlides fade">
-              <a href="30th Anniversary.html">
-                <img src="../assets/images/30th Anniversary Logo.jpg" />
-              </a>
-            </Slide>
-          </div>
-          <div class="next">
-            <button onclick="plusSlides(1)">&#10095;</button>
-          </div>
-        </div>
-        <Pagination class="dotContainer">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </Pagination>
+        <template #addons>
+          <Navigation />
+          <Pagination />
+        </template>
       </Carousel>
     </div>
     <div class="bottomContent">
@@ -156,7 +146,11 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 
 const route = useRoute();
 const carouselConfig = {
-  itemsToShow: 1.5,
+  itemsToShow: 1,
+  wrapAround: true,
+  autoplay: 5000,
+  transition: 750,
+  pauseAutoplayOnHover: true,
 };
 </script>
 <style scoped>

@@ -69,6 +69,10 @@
 
 /* text that appears on hover by the user*/
 /* the specific object for the user to hover */
+.linkList {
+  width: 100%;
+}
+
 .linkContent .extraInfo {
   z-index: 2;
   position: relative;
