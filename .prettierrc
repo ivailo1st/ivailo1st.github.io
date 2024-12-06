@@ -1,0 +1,13 @@
+{
+  "printWidth": 120,
+  "trailingComma": "all",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["**/*.vue", "**/*.css"]
+    }
+  ],
+  "tabWidth": 4,
+  "singleQuote": true,
+  "useTabs": true
+}
