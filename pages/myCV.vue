@@ -74,15 +74,17 @@
 						</NuxtLink>
 					</div>
 				</Slide>
-				<Slide key="item2"
-					><a href="Mini Project.html">
-						<img src="../assets/images/Mini Logo Alt.jpg" />
-					</a>
+				<Slide key="item2">
+					<div class="carousel__item">
+						<NuxtLink to="/miniProject">
+							<img src="../assets/images/Mini Logo Alt.jpg" />
+						</NuxtLink>
+					</div>
 				</Slide>
-				<Slide key="item3"
-					><a href="30th Anniversary.html">
+				<Slide key="item3">
+					<NuxtLink to="/anniversary30">
 						<img src="../assets/images/30th Anniversary Logo.jpg" />
-					</a>
+					</NuxtLink>
 				</Slide>
 
 				<template #addons>

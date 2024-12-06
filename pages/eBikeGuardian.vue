@@ -60,18 +60,19 @@
 		<div class="bottomContent">
 			<h1>Pictures of The Project</h1>
 			<div class="gallery">
-				<a data-fancybox="gallery" data-caption="The Website Map without CSS" href="../assets/images/Map.jpg"
-					><img src="../assets/images/Map.jpg"
-				/></a>
-				<a data-fancybox="gallery" data-caption="The Website with CSS" href="../assets/images/TheWebsite.JPG"
-					><img src="../assets/images/TheWebsite.JPG"
-				/></a>
+				<a data-fancybox="gallery" data-caption="The Website Map without CSS" href="../assets/images/Map.jpg">
+					<img src="../assets/images/Map.jpg" />
+				</a>
+				<a data-fancybox="gallery" data-caption="The Website with CSS" href="../assets/images/TheWebsite.JPG">
+					<img src="../assets/images/TheWebsite.JPG" />
+				</a>
 				<a
 					data-fancybox="gallery"
 					data-caption="The Roles function without CSS"
 					href="../assets/images/Roles.png"
-					><img src="../assets/images/Roles.png"
-				/></a>
+				>
+					<img src="../assets/images/Roles.png" />
+				</a>
 				<a
 					data-fancybox="gallery"
 					data-caption="The Login function without CSS"
