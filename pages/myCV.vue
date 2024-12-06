@@ -70,20 +70,20 @@
 				<Slide key="item1">
 					<div class="carousel__item">
 						<NuxtLink to="/eBikeGuardian">
-							<img src="/images/E-Bike Guardian.jpg" />
+							<NuxtImg src="/images/E-Bike Guardian.jpg" />
 						</NuxtLink>
 					</div>
 				</Slide>
 				<Slide key="item2">
 					<div class="carousel__item">
 						<NuxtLink to="/miniProject">
-							<img src="/images/Mini Logo Alt.jpg" />
+							<NuxtImg src="/images/Mini Logo Alt.jpg" />
 						</NuxtLink>
 					</div>
 				</Slide>
 				<Slide key="item3">
 					<NuxtLink to="/anniversary30">
-						<img src="/images/30th Anniversary Logo.jpg" />
+						<NuxtImg src="/images/30th Anniversary Logo.jpg" />
 					</NuxtLink>
 				</Slide>
 

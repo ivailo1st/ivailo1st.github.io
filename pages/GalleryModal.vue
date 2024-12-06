@@ -7,8 +7,8 @@
 			</div>
 			<Carousel v-bind="modalCarouselOptions">
 				<Slide v-for="image in images" :key="image">
-					<div class="carousel__item">
-						<img :src="image" />
+					<div class="modalItem">
+						<NuxtImg :src="image" />
 					</div>
 				</Slide>
 				<template #addons>
@@ -24,9 +24,10 @@
 import { VueFinalModal } from 'vue-final-modal';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 
-defineProps<{
-	title?: string;
+const { position } = defineProps<{
 	images: string[];
+	title?: string;
+	position?: number;
 }>();
 
 const emit = defineEmits<{
@@ -38,6 +39,7 @@ const modalCarouselOptions = {
 	wrapAround: true,
 	autoplay: 0,
 	transition: 750,
+	modelValue: position,
 };
 </script>
 

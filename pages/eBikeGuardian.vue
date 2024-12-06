@@ -60,20 +60,19 @@
 		<div class="bottomContent">
 			<h1>Pictures of The Project</h1>
 			<div class="gallery">
-				<a data-fancybox="gallery" data-caption="The Website Map without CSS" href="./images/Map.jpg">
-					<img src="/images/Map.jpg" />
-				</a>
-				<a data-fancybox="gallery" data-caption="The Website with CSS" href="./images/TheWebsite.JPG">
-					<img src="/images/TheWebsite.JPG" />
-				</a>
-				<a data-fancybox="gallery" data-caption="The Roles function without CSS" href="/images/Roles.png">
+				<button class="galleryButton" @click="handleOpenGallery(0)">
+					<NuxtImg src="/images/Map.jpg" />
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(1)">
+					<NuxtImg src="/images/TheWebsite.JPG" />
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(2)">
 					<NuxtImg src="/images/Roles.png" />
-				</a>
-				<a data-fancybox="gallery" data-caption="The Login function without CSS" href="./images/Login.jpg">
-					<img src="/images/Login.jpg" />
-				</a>
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(3)">
+					<NuxtImg src="/images/Login.jpg" />
+				</button>
 			</div>
-			<button @click="open">test button</button>
 			<ModalsContainer />
 			<NuxtLink to="myCV">
 				<button class="button" style="vertical-align: middle">
@@ -85,22 +84,32 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue';
 import { ModalsContainer, useModal } from 'vue-final-modal';
 import GalleryModal from './GalleryModal.vue';
 
+const position = ref(0);
+const attributes = ref({
+	title: 'E-Bike Guardian Gallery',
+	images: ['/images/Map.jpg', '/images/TheWebsite.JPG', '/images/Roles.png', '/images/Login.jpg'],
+	position: position.value,
+	onClose() {
+		close();
+	},
+});
+
 const { open, close } = useModal({
 	component: GalleryModal,
-	attrs: {
-		title: 'E-Bike Guardian Gallery',
-		images: ['/images/Map.jpg', '/images/TheWebsite.JPG', '/images/Roles.png', '/images/Login.jpg'],
-		onClose() {
-			close();
-		},
-	},
+	attrs: attributes.value,
 	slots: {
 		default: '',
 	},
 });
+
+const handleOpenGallery = (p: number) => {
+	attributes.value.position = p;
+	open();
+};
 </script>
 
 <style scoped>

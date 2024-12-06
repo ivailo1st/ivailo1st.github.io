@@ -23,41 +23,26 @@
 		<div class="bottomContent">
 			<h1>Pictures of The Project</h1>
 			<div class="gallery">
-				<a data-fancybox="gallery" data-caption="The main website page" href="/images/Web1.jpg">
-					<img src="/images/Web1.jpg" />
-				</a>
-				<a
-					data-fancybox="gallery"
-					data-caption="The page that shows the founder of the schools and some information about him"
-					href="/images/Web2.jpg"
-				>
-					<img src="/images/Web2.jpg" />
-				</a>
-				<a
-					data-fancybox="gallery"
-					data-caption="The top part of the page that shows various activities and events of the school"
-					href="/images//Web3.jpg"
-				>
-					<img src="/images/Web3.jpg" />
-				</a>
-				<a
-					data-fancybox="gallery"
-					data-caption="The bottom part of the page that shows various activities and events of the school"
-					href="/images/Web4.jpg"
-				>
-					<img src="/images/Web4.jpg" />
-				</a>
-				<a
-					data-fancybox="gallery"
-					data-caption="The page that containts the reason behind the making of the website and project itself"
-					href="/images/Web5.jpg"
-				>
-					<img src="/images/Web5.jpg" />
-				</a>
-				<a data-fancybox="gallery" data-caption="The page that contains the gallery" href="/images/Web7.jpg">
-					<img src="/images/Web7.jpg" />
-				</a>
+				<button class="galleryButton" @click="handleOpenGallery(0)">
+					<NuxtImg src="/images/Web1.jpg" />
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(1)">
+					<NuxtImg src="/images/Web2.jpg" />
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(2)">
+					<NuxtImg src="/images/Web3.jpg" />
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(3)">
+					<NuxtImg src="/images/Web4.jpg" />
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(4)">
+					<NuxtImg src="/images/Web5.jpg" />
+				</button>
+				<button class="galleryButton" @click="handleOpenGallery(5)">
+					<NuxtImg src="/images/Web7.jpg" />
+				</button>
 			</div>
+			<ModalsContainer />
 			<NuxtLink to="/myCV">
 				<button class="button" style="vertical-align: middle"><span>Back To CV </span></button>
 			</NuxtLink>
@@ -65,7 +50,41 @@
 	</div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue';
+import { ModalsContainer, useModal } from 'vue-final-modal';
+import GalleryModal from './GalleryModal.vue';
+
+const position = ref(0);
+const attributes = ref({
+	title: '30th Anniversary Gallery',
+	images: [
+		'/images/Web1.jpg',
+		'/images/Web2.jpg',
+		'/images/Web3.jpg',
+		'/images/Web4.jpg',
+		'/images/Web5.jpg',
+		'/images/Web7.jpg',
+	],
+	position: position.value,
+	onClose() {
+		close();
+	},
+});
+
+const { open, close } = useModal({
+	component: GalleryModal,
+	attrs: attributes.value,
+	slots: {
+		default: '',
+	},
+});
+
+const handleOpenGallery = (p: number) => {
+	attributes.value.position = p;
+	open();
+};
+</script>
 
 <style scoped>
 @import url('~/assets/css/projectPages.css');

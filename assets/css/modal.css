@@ -32,3 +32,11 @@
 	background-color: white;
 	border: 1px solid black;
 }
+
+.modalItem {
+	width: 100%;
+}
+
+.modalItem img {
+	width: 100%;
+}
