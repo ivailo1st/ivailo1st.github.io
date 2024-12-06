@@ -1,7 +1,7 @@
 <template>
 	<div class="content">
 		<div class="topContent">
-			<img src="../assets/images/30th Anniversary Logo.jpg" />
+			<img src="/images/30th Anniversary Logo.jpg" />
 		</div>
 		<div class="middleContent">
 			<p>
@@ -23,43 +23,39 @@
 		<div class="bottomContent">
 			<h1>Pictures of The Project</h1>
 			<div class="gallery">
-				<a data-fancybox="gallery" data-caption="The main website page" href="../assets/images/Web1.jpg">
-					<img src="../assets/images/Web1.jpg" />
+				<a data-fancybox="gallery" data-caption="The main website page" href="/images/Web1.jpg">
+					<img src="/images/Web1.jpg" />
 				</a>
 				<a
 					data-fancybox="gallery"
 					data-caption="The page that shows the founder of the schools and some information about him"
-					href="../assets/images/Web2.jpg"
+					href="/images/Web2.jpg"
 				>
-					<img src="../assets/images/Web2.jpg" />
+					<img src="/images/Web2.jpg" />
 				</a>
 				<a
 					data-fancybox="gallery"
 					data-caption="The top part of the page that shows various activities and events of the school"
-					href="../assets/images//Web3.jpg"
+					href="/images//Web3.jpg"
 				>
-					<img src="../assets/images/Web3.jpg" />
+					<img src="/images/Web3.jpg" />
 				</a>
 				<a
 					data-fancybox="gallery"
 					data-caption="The bottom part of the page that shows various activities and events of the school"
-					href="../assets/images/Web4.jpg"
+					href="/images/Web4.jpg"
 				>
-					<img src="../assets/images/Web4.jpg" />
+					<img src="/images/Web4.jpg" />
 				</a>
 				<a
 					data-fancybox="gallery"
 					data-caption="The page that containts the reason behind the making of the website and project itself"
-					href="../assets/images/Web5.jpg"
+					href="/images/Web5.jpg"
 				>
-					<img src="../assets/images/Web5.jpg" />
+					<img src="/images/Web5.jpg" />
 				</a>
-				<a
-					data-fancybox="gallery"
-					data-caption="The page that contains the gallery"
-					href="../assets/images/Web7.jpg"
-				>
-					<img src="../assets/images/Web7.jpg" />
+				<a data-fancybox="gallery" data-caption="The page that contains the gallery" href="/images/Web7.jpg">
+					<img src="/images/Web7.jpg" />
 				</a>
 			</div>
 			<NuxtLink to="/myCV">

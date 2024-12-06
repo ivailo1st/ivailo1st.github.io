@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.8.1",
     "@tsparticles/vue3": "^3.0.1",
     "nuxt": "^3.14.1592",
     "nuxt-particles": "^0.3.0",
@@ -18,6 +19,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@vue-final-modal/nuxt": "^1.0.3",
     "vue3-carousel-nuxt": "^1.1.3"
   }
 }

@@ -1,7 +1,7 @@
 <template>
 	<div class="content">
 		<div class="topContent">
-			<img src="../assets/images/E-Bike Guardian.jpg" style="width: 100%" />
+			<img src="/images/E-Bike Guardian.jpg" style="width: 100%" />
 		</div>
 		<div class="middleContent">
 			<p>
@@ -60,27 +60,21 @@
 		<div class="bottomContent">
 			<h1>Pictures of The Project</h1>
 			<div class="gallery">
-				<a data-fancybox="gallery" data-caption="The Website Map without CSS" href="../assets/images/Map.jpg">
-					<img src="../assets/images/Map.jpg" />
+				<a data-fancybox="gallery" data-caption="The Website Map without CSS" href="./images/Map.jpg">
+					<img src="/images/Map.jpg" />
 				</a>
-				<a data-fancybox="gallery" data-caption="The Website with CSS" href="../assets/images/TheWebsite.JPG">
-					<img src="../assets/images/TheWebsite.JPG" />
+				<a data-fancybox="gallery" data-caption="The Website with CSS" href="./images/TheWebsite.JPG">
+					<img src="/images/TheWebsite.JPG" />
 				</a>
-				<a
-					data-fancybox="gallery"
-					data-caption="The Roles function without CSS"
-					href="../assets/images/Roles.png"
-				>
-					<img src="../assets/images/Roles.png" />
+				<a data-fancybox="gallery" data-caption="The Roles function without CSS" href="/images/Roles.png">
+					<NuxtImg src="/images/Roles.png" />
 				</a>
-				<a
-					data-fancybox="gallery"
-					data-caption="The Login function without CSS"
-					href="../assets/images/Login.jpg"
-				>
-					<img src="../assets/images/Login.jpg" />
+				<a data-fancybox="gallery" data-caption="The Login function without CSS" href="./images/Login.jpg">
+					<img src="/images/Login.jpg" />
 				</a>
 			</div>
+			<button @click="open">test button</button>
+			<ModalsContainer />
 			<NuxtLink to="myCV">
 				<button class="button" style="vertical-align: middle">
 					<span>Back To CV </span>
@@ -90,7 +84,24 @@
 	</div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ModalsContainer, useModal } from 'vue-final-modal';
+import GalleryModal from './GalleryModal.vue';
+
+const { open, close } = useModal({
+	component: GalleryModal,
+	attrs: {
+		title: 'E-Bike Guardian Gallery',
+		images: ['/images/Map.jpg', '/images/TheWebsite.JPG', '/images/Roles.png', '/images/Login.jpg'],
+		onClose() {
+			close();
+		},
+	},
+	slots: {
+		default: '',
+	},
+});
+</script>
 
 <style scoped>
 @import url('~/assets/css/projectPages.css');

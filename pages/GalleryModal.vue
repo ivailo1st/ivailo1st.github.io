@@ -1,0 +1,46 @@
+<template>
+	<VueFinalModal content-class="overlayContent">
+		<div class="modalContainer">
+			<div class="modalHeader">
+				<span>{{ title }}</span>
+				<button class="modalCloseButton" @click="emit('close')">x</button>
+			</div>
+			<Carousel v-bind="modalCarouselOptions">
+				<Slide v-for="image in images" :key="image">
+					<div class="carousel__item">
+						<img :src="image" />
+					</div>
+				</Slide>
+				<template #addons>
+					<Navigation />
+					<Pagination />
+				</template>
+			</Carousel>
+		</div>
+	</VueFinalModal>
+</template>
+
+<script lang="ts" setup>
+import { VueFinalModal } from 'vue-final-modal';
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+
+defineProps<{
+	title?: string;
+	images: string[];
+}>();
+
+const emit = defineEmits<{
+	(e: 'close'): void;
+}>();
+
+const modalCarouselOptions = {
+	itemsToShow: 1,
+	wrapAround: true,
+	autoplay: 0,
+	transition: 750,
+};
+</script>
+
+<style>
+@import url('~/assets/css/modal.css');
+</style>

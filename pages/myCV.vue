@@ -21,7 +21,7 @@
 			<div class="topLeft">
 				<h1>Personal Information</h1>
 				<div class="topLeftImageContainer">
-					<img src="../assets/images/PersPhoto.jpg" />
+					<img src="/images/PersPhoto.jpg" />
 					<ul>
 						<li>
 							<p><strong>Nationality:</strong></p>
@@ -70,20 +70,20 @@
 				<Slide key="item1">
 					<div class="carousel__item">
 						<NuxtLink to="/eBikeGuardian">
-							<img src="~/assets/images/E-Bike Guardian.jpg" />
+							<img src="/images/E-Bike Guardian.jpg" />
 						</NuxtLink>
 					</div>
 				</Slide>
 				<Slide key="item2">
 					<div class="carousel__item">
 						<NuxtLink to="/miniProject">
-							<img src="../assets/images/Mini Logo Alt.jpg" />
+							<img src="/images/Mini Logo Alt.jpg" />
 						</NuxtLink>
 					</div>
 				</Slide>
 				<Slide key="item3">
 					<NuxtLink to="/anniversary30">
-						<img src="../assets/images/30th Anniversary Logo.jpg" />
+						<img src="/images/30th Anniversary Logo.jpg" />
 					</NuxtLink>
 				</Slide>
 
