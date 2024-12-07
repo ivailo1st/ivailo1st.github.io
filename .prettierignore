@@ -1,0 +1,11 @@
+.nuxt/
+.output/
+node_modules/
+package.json
+package-lock.json
+*.yml
+*.yaml
+*.sh
+*.lock
+.*ignore
+*.log
