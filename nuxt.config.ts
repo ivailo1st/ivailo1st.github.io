@@ -4,8 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     buildAssetsDir: 'assets',
-    
-
   },
   modules: [
     'nuxt-particles',
