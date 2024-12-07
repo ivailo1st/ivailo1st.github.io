@@ -40,8 +40,6 @@
 import { tsParticles, type IOptions, type RecursivePartial } from '@tsparticles/engine';
 import { loadFull } from 'tsparticles';
 
-const route = useRoute();
-
 await loadFull(tsParticles);
 
 const nuxtParticleOptions: RecursivePartial<IOptions> = {

@@ -36,28 +36,28 @@ ul {
 	text-transform: uppercase;
 }
 
-.headContent .persInfo {
+.persInfo {
 	text-align: end;
 	font-size: 1.25rem;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 }
 
-.headContent .persInfo ul {
+.persInfo ul {
 	list-style: none;
 	letter-spacing: 1px;
 }
 
-.headContent .persInfo li {
+.persInfo li {
 	line-height: 2;
 }
 
-.headContent .persInfo a {
+.persInfo a {
 	text-decoration: underline;
 	color: #fff;
 }
 
-.headContent .persInfo a:hover {
+.persInfo a:hover {
 	text-decoration: underline;
 	color: #bdbdbd;
 }
@@ -297,12 +297,5 @@ ul {
 
 	.bottomRight h1 {
 		text-align: center;
-	}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-	.text {
-		font-size: 11px;
 	}
 }

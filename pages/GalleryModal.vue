@@ -3,7 +3,9 @@
 		<div class="modalContainer">
 			<div class="modalHeader">
 				<span class="modalTitle">{{ title }}</span>
-				<button class="modalCloseButton" @click="emit('close')">x</button>
+				<button class="modalCloseButton" @click="emit('close')" title="Close modal">
+					<span class="closeIcon"></span>
+				</button>
 			</div>
 			<Carousel v-bind="modalCarouselOptions">
 				<Slide v-for="image in images" :key="image">
