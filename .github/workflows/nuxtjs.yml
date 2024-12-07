@@ -29,6 +29,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: nuxt
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      # Pick your own package manager and build script
+      - run: npm install
+      - run: npx nuxt build --preset github_pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.output/public
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
