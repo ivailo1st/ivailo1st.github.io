@@ -4,13 +4,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font: normal 75% Arial, Helvetica, sans-serif;
 }
 
 .modalContainer {
 	display: flex;
 	flex-direction: column;
-	width: 768px;
-	height: auto;
+	width: 100%;
+	max-width: 768px;
 	padding: 16px;
 	gap: 16px;
 
@@ -23,6 +24,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.modalTitle {
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
 }
 
 .modalCloseButton {

@@ -2,7 +2,7 @@
 	<VueFinalModal content-class="overlayContent">
 		<div class="modalContainer">
 			<div class="modalHeader">
-				<span>{{ title }}</span>
+				<span class="modalTitle">{{ title }}</span>
 				<button class="modalCloseButton" @click="emit('close')">x</button>
 			</div>
 			<Carousel v-bind="modalCarouselOptions">

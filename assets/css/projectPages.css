@@ -16,7 +16,7 @@
 }
 
 .middleContent {
-	text-align: center;
+	text-align: justify;
 	margin-top: 50px;
 	font-size: 20px;
 	letter-spacing: 1px;
@@ -45,6 +45,14 @@
 	color: #023ea1;
 }
 
+.bottomContent {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	border-top: 1px solid black;
+}
+
 .bottomContent .gallery {
 	display: flex;
 	-ms-flex-wrap: wrap;
@@ -53,7 +61,12 @@
 	align-content: center;
 }
 
-.bottomContent .button {
+.topBorder {
+	border-top: 1px solid black;
+	padding-top: 8px;
+}
+
+.backButton {
 	margin-left: 50%;
 	border-radius: 4px;
 	background-color: #004bc4;
@@ -67,14 +80,14 @@
 	margin: 5px;
 }
 
-.bottomContent .button span {
+.backButton span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
 }
 
-.bottomContent .button span:after {
+.backButton span:after {
 	content: '\00bb';
 	position: absolute;
 	opacity: 0;
@@ -83,24 +96,33 @@
 	transition: 0.5s;
 }
 
-.bottomContent .button:hover span {
+.backButton:hover span {
 	padding-right: 25px;
 }
 
-.bottomContent .button:hover span:after {
+.backButton:hover span:after {
 	opacity: 1;
 	right: 0;
 }
 
-.bottomContent .gallery a {
-	margin: 10px;
+.gallery {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 16px;
 }
 
-.bottomContent img {
+.galleryButton {
+	cursor: pointer;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.galleryButton:hover {
+	border: 2px solid #adadad;
+}
+
+.galleryButton img {
 	max-height: 200px;
-	border: 5px solid #d9d9d9;
-}
-
-.bottomContent img:hover {
-	border: 5px solid #adadad;
 }

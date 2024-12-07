@@ -1,7 +1,7 @@
 <template>
 	<div class="content">
 		<div class="topContent">
-			<img src="../assets/images/Mini Logo Alt.jpg" style="width: 100%; max-width: 400px" />
+			<img src="/images/Mini Logo Alt.jpg" style="width: 100%; max-width: 400px" />
 		</div>
 		<div class="middleContent">
 			<p>
@@ -37,9 +37,9 @@
 				<a href="https://drive.google.com/file/d/1RcYyXJkOeGvvEYm0sdv5Z9eN8oM3o0km/view?usp=sharing">Code</a>.
 			</p>
 		</div>
-		<div class="bottomContent">
+		<div class="bottomContent topBorder">
 			<NuxtLink to="/myCV">
-				<button class="button" style="vertical-align: middle">
+				<button class="backButton" style="vertical-align: middle">
 					<span>Back To CV </span>
 				</button>
 			</NuxtLink>

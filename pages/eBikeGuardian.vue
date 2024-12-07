@@ -60,22 +60,22 @@
 		<div class="bottomContent">
 			<h1>Pictures of The Project</h1>
 			<div class="gallery">
-				<button class="galleryButton" @click="handleOpenGallery(0)">
+				<button class="galleryButton" @click="handleOpenGallery(0)" title="Open Gallery">
 					<NuxtImg src="/images/Map.jpg" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(1)">
+				<button class="galleryButton" @click="handleOpenGallery(1)" title="Open Gallery">
 					<NuxtImg src="/images/TheWebsite.JPG" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(2)">
+				<button class="galleryButton" @click="handleOpenGallery(2)" title="Open Gallery">
 					<NuxtImg src="/images/Roles.png" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(3)">
+				<button class="galleryButton" @click="handleOpenGallery(3)" title="Open Gallery">
 					<NuxtImg src="/images/Login.jpg" />
 				</button>
 			</div>
 			<ModalsContainer />
-			<NuxtLink to="myCV">
-				<button class="button" style="vertical-align: middle">
+			<NuxtLink to="myCV" class="topBorder">
+				<button class="backButton" style="vertical-align: middle">
 					<span>Back To CV </span>
 				</button>
 			</NuxtLink>

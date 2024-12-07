@@ -66,32 +66,36 @@
 		</div>
 		<div class="middleContent">
 			<h1>My Work</h1>
-			<Carousel v-bind="carouselConfig">
-				<Slide key="item1">
-					<div class="carousel__item">
-						<NuxtLink to="/eBikeGuardian">
-							<NuxtImg src="/images/E-Bike Guardian.jpg" />
-						</NuxtLink>
-					</div>
-				</Slide>
-				<Slide key="item2">
-					<div class="carousel__item">
-						<NuxtLink to="/miniProject">
-							<NuxtImg src="/images/Mini Logo Alt.jpg" />
-						</NuxtLink>
-					</div>
-				</Slide>
-				<Slide key="item3">
-					<NuxtLink to="/anniversary30">
-						<NuxtImg src="/images/30th Anniversary Logo.jpg" />
-					</NuxtLink>
-				</Slide>
+			<div class="carouselWrapper">
+				<Carousel v-bind="carouselConfig" class="carousel">
+					<Slide key="item1">
+						<div class="projectSlide">
+							<NuxtLink to="/eBikeGuardian">
+								<NuxtImg src="/images/E-Bike Guardian.jpg" />
+							</NuxtLink>
+						</div>
+					</Slide>
+					<Slide key="item2">
+						<div class="projectSlide">
+							<NuxtLink to="/miniProject">
+								<NuxtImg src="/images/Mini Logo Alt.jpg" />
+							</NuxtLink>
+						</div>
+					</Slide>
+					<Slide key="item3">
+						<div class="projectSlide">
+							<NuxtLink to="/anniversary30">
+								<NuxtImg src="/images/30th Anniversary Logo.jpg" />
+							</NuxtLink>
+						</div>
+					</Slide>
 
-				<template #addons>
-					<Navigation />
-					<Pagination />
-				</template>
-			</Carousel>
+					<template #addons>
+						<Navigation />
+						<Pagination />
+					</template>
+				</Carousel>
+			</div>
 		</div>
 		<div class="bottomContent">
 			<div class="bottomLeft">

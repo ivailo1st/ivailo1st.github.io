@@ -23,28 +23,28 @@
 		<div class="bottomContent">
 			<h1>Pictures of The Project</h1>
 			<div class="gallery">
-				<button class="galleryButton" @click="handleOpenGallery(0)">
+				<button class="galleryButton" @click="handleOpenGallery(0)" title="Open Gallery">
 					<NuxtImg src="/images/Web1.jpg" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(1)">
+				<button class="galleryButton" @click="handleOpenGallery(1)" title="Open Gallery">
 					<NuxtImg src="/images/Web2.jpg" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(2)">
+				<button class="galleryButton" @click="handleOpenGallery(2)" title="Open Gallery">
 					<NuxtImg src="/images/Web3.jpg" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(3)">
+				<button class="galleryButton" @click="handleOpenGallery(3)" title="Open Gallery">
 					<NuxtImg src="/images/Web4.jpg" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(4)">
+				<button class="galleryButton" @click="handleOpenGallery(4)" title="Open Gallery">
 					<NuxtImg src="/images/Web5.jpg" />
 				</button>
-				<button class="galleryButton" @click="handleOpenGallery(5)">
+				<button class="galleryButton" @click="handleOpenGallery(5)" title="Open Gallery">
 					<NuxtImg src="/images/Web7.jpg" />
 				</button>
 			</div>
 			<ModalsContainer />
-			<NuxtLink to="/myCV">
-				<button class="button" style="vertical-align: middle"><span>Back To CV </span></button>
+			<NuxtLink to="/myCV" class="topBorder">
+				<button class="backButton" style="vertical-align: middle"><span>Back To CV </span></button>
 			</NuxtLink>
 		</div>
 	</div>
@@ -55,7 +55,6 @@ import { ref } from 'vue';
 import { ModalsContainer, useModal } from 'vue-final-modal';
 import GalleryModal from './GalleryModal.vue';
 
-const position = ref(0);
 const attributes = ref({
 	title: '30th Anniversary Gallery',
 	images: [
@@ -66,7 +65,7 @@ const attributes = ref({
 		'/images/Web5.jpg',
 		'/images/Web7.jpg',
 	],
-	position: position.value,
+	position: 0,
 	onClose() {
 		close();
 	},
