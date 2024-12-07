@@ -86,8 +86,7 @@ const nuxtParticleOptions: RecursivePartial<IOptions> = {
 			value: 80,
 			density: {
 				enable: true,
-				height: 1000,
-				width: 1000,
+				width: 900,
 			},
 		},
 		opacity: {

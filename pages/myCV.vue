@@ -68,21 +68,21 @@
 			<h1>My Work</h1>
 			<div class="carouselWrapper">
 				<Carousel v-bind="carouselConfig" class="carousel">
-					<Slide key="item1">
+					<Slide key="item1" title="Go to project">
 						<div class="projectSlide">
 							<NuxtLink to="/eBikeGuardian">
 								<NuxtImg src="/images/E-Bike Guardian.jpg" />
 							</NuxtLink>
 						</div>
 					</Slide>
-					<Slide key="item2">
+					<Slide key="item2" title="Go to project">
 						<div class="projectSlide">
 							<NuxtLink to="/miniProject">
 								<NuxtImg src="/images/Mini Logo Alt.jpg" />
 							</NuxtLink>
 						</div>
 					</Slide>
-					<Slide key="item3">
+					<Slide key="item3" title="Go to project">
 						<div class="projectSlide">
 							<NuxtLink to="/anniversary30">
 								<NuxtImg src="/images/30th Anniversary Logo.jpg" />

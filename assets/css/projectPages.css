@@ -50,7 +50,7 @@
 	flex-direction: column;
 	gap: 16px;
 
-	border-top: 1px solid black;
+	border-top: 1px solid #d4d4d4;
 }
 
 .bottomContent .gallery {
@@ -62,7 +62,7 @@
 }
 
 .topBorder {
-	border-top: 1px solid black;
+	border-top: 1px solid #d4d4d4;
 	padding-top: 8px;
 }
 
