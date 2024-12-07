@@ -88,11 +88,15 @@ import { ref } from 'vue';
 import { ModalsContainer, useModal } from 'vue-final-modal';
 import GalleryModal from './GalleryModal.vue';
 
-const position = ref(0);
 const attributes = ref({
 	title: 'E-Bike Guardian Gallery',
-	images: ['/images/Map.jpg', '/images/TheWebsite.JPG', '/images/Roles.png', '/images/Login.jpg'],
-	position: position.value,
+	images: [
+		{ url: '/images/Map.jpg', description: 'The Website Map without CSS' },
+		{ url: '/images/TheWebsite.JPG', description: 'The Website with CSS' },
+		{ url: '/images/Roles.png', description: 'The Roles function without CSS' },
+		{ url: '/images/Login.jpg', description: 'The Login function without CSS' },
+	],
+	position: 0,
 	onClose() {
 		close();
 	},

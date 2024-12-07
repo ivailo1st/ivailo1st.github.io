@@ -8,9 +8,12 @@
 				</button>
 			</div>
 			<Carousel v-bind="modalCarouselOptions">
-				<Slide v-for="image in images" :key="image">
+				<Slide v-for="image in images" :key="image.url">
 					<div class="modalItem">
-						<NuxtImg :src="image" />
+						<NuxtImg :src="image.url" />
+						<span>
+							{{ image.description }}
+						</span>
 					</div>
 				</Slide>
 				<template #addons>
@@ -27,7 +30,7 @@ import { VueFinalModal } from 'vue-final-modal';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 
 const { position } = defineProps<{
-	images: string[];
+	images: { url: string; description: string }[];
 	title?: string;
 	position?: number;
 }>();

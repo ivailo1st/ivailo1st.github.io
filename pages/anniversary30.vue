@@ -58,12 +58,24 @@ import GalleryModal from './GalleryModal.vue';
 const attributes = ref({
 	title: '30th Anniversary Gallery',
 	images: [
-		'/images/Web1.jpg',
-		'/images/Web2.jpg',
-		'/images/Web3.jpg',
-		'/images/Web4.jpg',
-		'/images/Web5.jpg',
-		'/images/Web7.jpg',
+		{ url: '/images/Web1.jpg', description: 'The main website page' },
+		{
+			url: '/images/Web2.jpg',
+			description: 'The page that shows the founder of the schools and some information about him',
+		},
+		{
+			url: '/images/Web3.jpg',
+			description: 'The top part of the page that shows various activities and events of the school',
+		},
+		{
+			url: '/images/Web4.jpg',
+			description: 'The bottom part of the page that shows various activities and events of the school',
+		},
+		{
+			url: '/images/Web5.jpg',
+			description: 'The page that containts the reason behind the making of the website and project itself',
+		},
+		{ url: '/images/Web7.jpg', description: 'The page that contains the gallery' },
 	],
 	position: 0,
 	onClose() {

@@ -89,7 +89,13 @@
 }
 
 .modalItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
+	height: 100%;
 	width: 100%;
+	font-size: 16px;
 }
 
 .modalItem img {
