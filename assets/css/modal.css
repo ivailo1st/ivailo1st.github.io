@@ -7,6 +7,11 @@
 	font: normal 75% Arial, Helvetica, sans-serif;
 }
 
+.overlayContent {
+	max-width: 768px;
+	width: 100%;
+}
+
 .modalContainer {
 	display: flex;
 	flex-direction: column;
@@ -100,4 +105,5 @@
 
 .modalItem img {
 	width: 100%;
+	max-width: 768px;
 }

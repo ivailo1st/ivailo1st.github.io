@@ -1,5 +1,5 @@
 <template>
-	<VueFinalModal class="overlay">
+	<VueFinalModal class="overlay" content-class="overlayContent">
 		<div class="modalContainer">
 			<div class="modalHeader">
 				<span class="modalTitle">{{ title }}</span>
