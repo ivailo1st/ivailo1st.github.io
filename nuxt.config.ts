@@ -10,5 +10,6 @@ export default defineNuxtConfig({
     'vue3-carousel-nuxt',
     '@vue-final-modal/nuxt',
     '@nuxt/image'
-  ]
+  ],
+  css: ['vue-final-modal/style.css']
 })
